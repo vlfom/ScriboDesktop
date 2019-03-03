@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<VBox prefHeight="592.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <SplitPane dividerPositions="0.23510971786833856" layoutX="214.0" layoutY="82.0" prefHeight="371.5" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="231.0" prefWidth="262.0">
+                     <children>
+                        <SplitPane dividerPositions="0.5" layoutY="54.0" mouseTransparent="true" orientation="VERTICAL" prefHeight="369.5" prefWidth="146.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane fx:id="control_panel" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                                    <TextArea depthTest="DISABLE" layoutX="78.0" layoutY="7.0" prefHeight="46.0" prefWidth="141.0" />
+                                    <JFXButton layoutX="22.0" layoutY="215.0" text="sdadsfdsffdsfsdfdsdds" />
+                                    <JFXButton layoutX="85.0" layoutY="215.0" />
+                                    <JFXButton layoutX="147.0" layoutY="215.0" ripplerFill="WHITE" />
+                                    <JFXButton layoutX="22.0" layoutY="249.0" />
+                                    <JFXButton layoutX="85.0" layoutY="249.0" />
+                                    <JFXButton layoutX="147.0" layoutY="249.0" />
+                                 </children></AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="173.0" prefWidth="225.0" SplitPane.resizableWithParent="false">
+                                 <children>
+                                    <ListView layoutY="23.0" prefHeight="290.0" prefWidth="225.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="158.0" prefWidth="313.0">
+                     <children>
+                        <WebView fx:id="web_view" layoutX="41.0" layoutY="14.0" prefHeight="590.0" prefWidth="748.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
