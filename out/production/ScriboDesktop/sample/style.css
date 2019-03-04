@@ -1,12 +1,21 @@
-*:focused {
+* {
+    user-select:none;
     -fx-focus-color: transparent;
     -fx-faint-focus-color: transparent;
     -fx-background-insets: 0, 0, 0, 0;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
 
 .root {
     -fx-focus-color: transparent;
     -fx-faint-focus-color: transparent;
+    user-select:none;
 }
 
 .split-pane > .split-pane-divider {
@@ -25,4 +34,14 @@
 #control_panel {
     -fx-border-width: 0 1 0 0; -fx-border-color: #ccc;
     -fx-background-color: #fff;
+}
+
+.list-view-cell {
+    -fx-cell-size: 50px;
+}
+
+.jfx-button {
+    -jfx-button-type: FLAT;
+    -fx-background-color: white;
+    -fx-text-fill: black;
 }

@@ -1,9 +1,14 @@
 package sample;
 
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ListCell;
+import javafx.scene.control.ListView;
+import javafx.scene.layout.Region;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Screen;
@@ -49,6 +54,15 @@ public class Main extends Application {
         webEngine.loadContent(html_content, "text/html");
         System.out.println(getClass().getResource("../main_webview/style.css").toString());
         webEngine.setUserStyleSheetLocation(getClass().getResource("../main_webview/style.css").toString());
+
+        /* Initialize ListView */
+        ObservableList<Recording> content = FXCollections.observableArrayList(
+                new Recording("Interview with Jason"),
+                new Recording("Phone call Alice")
+        );
+        ListView listView = (ListView) scene.lookup("#list_view");
+        listView.setItems(content);
+        listView.setCellFactory(studentListView -> new RecordingsListViewCell());
     }
 
 

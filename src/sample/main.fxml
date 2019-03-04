@@ -30,16 +30,16 @@
                                  <children>
                                     <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
                                     <TextArea depthTest="DISABLE" layoutX="78.0" layoutY="7.0" prefHeight="46.0" prefWidth="141.0" />
-                                    <JFXButton layoutX="22.0" layoutY="215.0" text="sdadsfdsffdsfsdfdsdds" />
-                                    <JFXButton layoutX="85.0" layoutY="215.0" />
-                                    <JFXButton layoutX="147.0" layoutY="215.0" ripplerFill="WHITE" />
-                                    <JFXButton layoutX="22.0" layoutY="249.0" />
-                                    <JFXButton layoutX="85.0" layoutY="249.0" />
-                                    <JFXButton layoutX="147.0" layoutY="249.0" />
+                                    <JFXButton styleClass="jfx-button" layoutX="22.0" layoutY="215.0" text="Copy" />
+                                    <JFXButton layoutX="85.0" layoutY="215.0" text="Paste" />
+                                    <JFXButton layoutX="147.0" layoutY="215.0" text="Delete" />
+                                    <JFXButton layoutX="22.0" layoutY="249.0" text="AI Search" />
+                                    <JFXButton layoutX="85.0" layoutY="249.0" text="Suggestions" />
+                                    <JFXButton layoutX="147.0" layoutY="249.0" text="Highlight" />
                                  </children></AnchorPane>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="173.0" prefWidth="225.0" SplitPane.resizableWithParent="false">
                                  <children>
-                                    <ListView layoutY="23.0" prefHeight="290.0" prefWidth="225.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <ListView fx:id="list_view" layoutY="23.0" prefHeight="290.0" prefWidth="225.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                  </children>
                               </AnchorPane>
                           </items>
