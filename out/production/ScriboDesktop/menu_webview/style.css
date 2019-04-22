@@ -1,0 +1,109 @@
+@font-fnoace {
+  font-family: Roboto-light;
+  src: url(file:/Users/vlfom/IdeaProjects/ScriboDesktop/out/production/ScriboDesktop/main_webview/fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(file:/Users/vlfom/IdeaProjects/ScriboDesktop/out/production/ScriboDesktop/main_webview/fonts/Roboto-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+}
+
+body {
+	overflow: hidden;
+}
+
+.header {
+	height: 310px;
+}
+
+.file-title-group {
+	height: 60px;
+	width: 100%;
+
+	padding: 20px;
+}
+
+.header-title {
+	font-size: 14px;
+	margin-bottom: 6px;
+}
+
+.file-title {
+	font-size: 26px;
+}
+
+.file-desc {
+	height: 150px;
+	width: 100%;
+	padding: 20px;
+}
+
+.file-notes {
+	height: 150px;
+}
+
+.notes-title {
+	font-size: 14px;
+	margin-bottom: 6px;
+	text-decoration: underline;
+}
+
+.notes-text {
+	font-size: 14px;
+	color: #222;
+
+	width: 300px;
+}
+
+.controls {
+	height: 182px;
+}
+
+.controls-row {
+	height: 60px;
+	padding-top: 14px;
+
+	width: 286px;
+
+	padding-left: 25px;
+	padding-right: 20px;
+}
+
+.controls-bottom {
+	padding-bottom: 10px;
+}
+
+
+/*246 = x + y + x + y + x*/
+.control {
+
+	margin-left: 12px;
+
+	text-align: center;
+
+	padding: 5px 10px;
+	padding-top: 15px;
+
+	height: 40px;
+	width: 52px;
+
+	display: inline-block;
+
+	font-size: 12px;
+
+	box-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.control.oneline {
+	padding: 5px 10px;
+
+	height: 50px;
+	line-height: 50px;
+}

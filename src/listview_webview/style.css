@@ -1,0 +1,75 @@
+@font-face {
+  font-family: Roboto-light;
+  src: url(file:/Users/vlfom/IdeaProjects/ScriboDesktop/out/production/ScriboDesktop/main_webview/fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(file:/Users/vlfom/IdeaProjects/ScriboDesktop/out/production/ScriboDesktop/main_webview/fonts/Roboto-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+
+	font-family: Roboto;
+
+	overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.header {
+	width: 100%;
+	height: 17px;
+	background: #eee;
+
+	padding: 5px 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.header-title {
+	font-size: 14px;
+	height: 20px;
+	color: #555;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+}
+
+.item {
+	padding: 16px;
+
+	height: 40px;
+	border-bottom: 1px solid #ddd;
+}
+
+.item.current {
+	background: #fee;
+}
+
+.title {
+	font-size: 16px;
+
+	color: #333;
+
+	margin-bottom: 10px;
+}
+
+.timestamp {
+	font-size: 12px;
+
+	display: inline-block;
+
+	color: #888;
+}
+
+.date {
+	font-size: 12px;
+
+	display: inline-block;
+
+	color: #888;
+	margin-left: 15px;
+}

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -20,7 +16,7 @@
             <Font size="18.0" />
           </font>
         </Label>
-            <SplitPane dividerPositions="0.23510971786833856" layoutX="214.0" layoutY="82.0" prefHeight="371.5" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <SplitPane dividerPositions="0.2" layoutX="214.0" layoutY="82.0" prefHeight="371.5" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="231.0" prefWidth="262.0">
                      <children>
@@ -28,18 +24,11 @@
                           <items>
                             <AnchorPane fx:id="control_panel" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                                  <children>
-                                    <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-                                    <TextArea depthTest="DISABLE" layoutX="78.0" layoutY="7.0" prefHeight="46.0" prefWidth="141.0" />
-                                    <JFXButton styleClass="jfx-button" layoutX="22.0" layoutY="215.0" text="Copy" />
-                                    <JFXButton layoutX="85.0" layoutY="215.0" text="Paste" />
-                                    <JFXButton layoutX="147.0" layoutY="215.0" text="Delete" />
-                                    <JFXButton layoutX="22.0" layoutY="249.0" text="AI Search" />
-                                    <JFXButton layoutX="85.0" layoutY="249.0" text="Suggestions" />
-                                    <JFXButton layoutX="147.0" layoutY="249.0" text="Highlight" />
+                                    <WebView fx:id="menu_view" layoutX="13.0" layoutY="30.0" prefHeight="290.0" prefWidth="225.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                  </children></AnchorPane>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="173.0" prefWidth="225.0" SplitPane.resizableWithParent="false">
+                            <AnchorPane fx:id="list_anchor" minHeight="0.0" minWidth="0.0" prefHeight="173.0" prefWidth="225.0" SplitPane.resizableWithParent="false">
                                  <children>
-                                    <ListView fx:id="list_view" layoutY="23.0" prefHeight="290.0" prefWidth="225.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <WebView fx:id="list_view" layoutX="14.0" layoutY="14.0" prefHeight="290.0" prefWidth="225.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                  </children>
                               </AnchorPane>
                           </items>
@@ -48,7 +37,7 @@
                   </AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="158.0" prefWidth="313.0">
                      <children>
-                        <WebView fx:id="web_view" layoutX="41.0" layoutY="14.0" prefHeight="590.0" prefWidth="748.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <WebView fx:id="content_view" layoutX="41.0" layoutY="14.0" prefHeight="590.0" prefWidth="748.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                      </children>
                   </AnchorPane>
               </items>

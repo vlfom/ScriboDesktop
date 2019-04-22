@@ -11,7 +11,7 @@
 body {
 	position: relative;
 	text-align: left;
-	margin: 60px 200px 50px 230px;
+	margin: 60px 200px 50px 240px;
 }
 
 .title {
@@ -85,4 +85,11 @@ body {
 
 	margin-bottom: 33px;
 	margin-left: 20px;
+}
+
+.content .word {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border: none;
 }
